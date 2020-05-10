@@ -57,7 +57,7 @@ header {
     display: flex;
     margin-left: 1rem;
     justify-content: flex-start;
-    height: 95%;
+    height: 6rem;
 
 }
 
@@ -183,6 +183,27 @@ li a:hover {
     align-items: center;
     justify-content: center;
 }
+.containerEquipo {
+    background-image: url("../../resources/images/equipo.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.picCont {
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid hsl(46, 67%, 52%);
+    background-color: hsl(218, 63%, 12%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
 .container2 {
    
     text-align: center;
@@ -260,7 +281,8 @@ li a:hover {
     width: 25rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
     justify-content: space-around;
     height: 20rem;
     list-style: circle;
@@ -276,14 +298,16 @@ li a:hover {
     list-style: circle;
     text-align: left;
 }
-.familiaList li{
-    width: 25rem;
+.contactList {
+    width: 70%;
+    min-width: 40rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ 
+    list-style: none;
     text-align: left;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    list-style-type: circle;
 }
 .mission {
     text-align: center;
@@ -364,6 +388,7 @@ h3 {
 }
 .container3Civil h3 {
     border-bottom: 2px solid hsl(46, 67%, 52%);
+    text-transform: uppercase;
 }
 .areasCont {
     width: 100%;
@@ -372,7 +397,11 @@ h3 {
     align-items: center;
     justify-content: space-around;
 }
+.areasCont a {
 
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .area {
     display: flex;
@@ -381,18 +410,23 @@ h3 {
     justify-content: center;
     border: 2px outset hsl(46, 67%, 52%);
     box-shadow: 5px 5px 10px black;
-    width: 14rem;
+    width: 17rem;
     border-radius: 10px;
     background-color: hsl(218, 63%, 12%);
     margin-bottom: 4rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(46, 67%, 98%);
     
 }
 .areaTitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Source Serif Pro', serif;
   text-align: center;
-  
+  text-decoration: none;
   width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 .area:hover {
     display: flex;
@@ -401,9 +435,9 @@ h3 {
     justify-content: center;
     border: 2px outset hsl(46, 67%, 52%);
     box-shadow: 5px 5px 10px black;
-    width: 14rem;
+    width: 17rem;
     border-radius: 10px;
-  
+  cursor: pointer;
     margin-bottom: 4rem;
   color: hsl(46, 67%, 52%);
   
@@ -430,6 +464,7 @@ footer {
 }
 footer .logo {
     width: 15rem;
+    height: auto;
     margin-top: 3rem;
     margin-left: -1rem;
 }
@@ -463,6 +498,7 @@ footer .logo {
     text-decoration: underline;
     margin: 0.5rem;
     color: hsl(46, 67%, 52%);
+    cursor: pointer;
 
 }
 .footerContM a, span {
@@ -476,4 +512,54 @@ footer .logo {
     margin: 0.5rem;
     color: hsl(46, 67%, 52%);
 
+}
+
+form {
+    width: 60%;
+    min-width: 40rem;
+    height: 35rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid hsl(46, 67%, 52%);
+    border-radius: 10px;
+    background-color: hsl(218, 63%, 20%);
+    margin-bottom: 5rem;
+
+}
+
+form h4 {
+    width: 16rem;
+    border: 1px solid hsl(46, 67%, 98%);
+    padding: 0.5rem;
+}
+.consulta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.consulta textarea {
+   width: 20rem;
+   height: 10rem;
+}
+
+#submit {
+    color: hsl(46, 67%, 98%);
+   text-transform: uppercase;
+    border: 2px solid  hsl(46, 67%, 98%);
+    background-color: hsl(218, 63%, 12%);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px black;
+}
+#submit:hover {
+    text-transform: uppercase;
+    color: hsl(46, 67%, 52%);
+    padding: 1rem;
+    border: 2px solid hsl(46, 67%, 52%);
+    background-color: hsl(218, 64%, 7%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
 }
