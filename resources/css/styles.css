@@ -10,24 +10,24 @@ p {
 }
 
 h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 40px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
 }
 
 h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 36px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 1.6rem;
 }
 
 h4 {
-    font-family: 'Cinzel', serif;
-    font-size: 26px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.4rem;
     font-weight: 400;
     width: 20%;
 }
@@ -136,6 +136,16 @@ li a:hover {
     justify-content: center;
     align-items: center;
 }
+.equipo {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .container {
     background-image: url("../../resources/images/larabanner.jpg");
@@ -184,6 +194,23 @@ li a:hover {
     justify-content: center;
 }
 .containerEquipo {
+
+    background-image: url("../../resources/images/equipo.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    
+    padding-top: 8rem;
+}
+.containerEquipo2 {
+
     background-image: url("../../resources/images/equipo.jpg");
     background-position: center;
     background-attachment: fixed;
@@ -195,14 +222,106 @@ li a:hover {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+    padding-bottom: 5rem;
 }
+.eqRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 66%;
+}
+.member {
+    margin: 1rem;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.memberE {
+    margin: 1rem;
+    display: flex;
+   width: 32%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .picCont {
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
     border: 2px solid hsl(46, 67%, 52%);
     background-color: hsl(218, 63%, 12%);
-    border-radius: 10px;
+    border-radius: 100%;
     box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+}
+.picCont:hover {
+    height: 18rem;
+    width: 18rem;
+    border: 2px solid hsl(46, 67%, 52%);
+    background-color: hsl(218, 63%, 12%);
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+}
+.picContM {
+    height: 18rem;
+    width: 18rem;
+    border: 2px solid hsl(46, 67%, 52%);
+    background-color: hsl(218, 63%, 12%);
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+}
+.picContM:hover {
+    height: 25rem;
+    width: 25rem;
+    border: 2px solid hsl(46, 67%, 52%);
+    background-color: hsl(218, 63%, 12%);
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+}
+.picCont img {
+    width: 100%;
+    height: auto;
+}
+.picContM img {
+    width: 100%;
+    height: auto;
+}
+.picFoot {
+    margin-top: 1rem;
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: hsl(218, 63%, 12%, 0.9);
+    box-shadow: 5px 5px 10px black;
+    padding: 1rem;
+}
+.picFoot h4 {
+    margin-top: 0rem;
+    width: 80%;
+    border-bottom: 1px solid hsl(46, 67%, 81%);
+    
+}
+.picFoot h5 {
+    margin-top: -0.5rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.picFoot p {
+    margin-top: -1rem;
+    width: 80%;
+    text-align: justify;
+    font-size: 0.9rem;
 }
 .container2 {
    
@@ -274,9 +393,14 @@ li a:hover {
     box-shadow: 5px 5px 10px black;
 }
 .pointText {
-    width: 80%
+    width: 80%;
+   
 }
-
+.pointText strong {
+    text-align: center;
+    font-size: 1.4rem;
+    
+}
 .familiaList{
     width: 25rem;
     display: flex;
@@ -325,11 +449,12 @@ li a:hover {
     min-width: 50rem;
 }
 .mission h3 {
+    font-family: 'Source Serif Pro', serif;
     margin-top: -1rem;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
 }
 h3 {
-    font-size: 2.5rem;
+   
     font-family: 'Source Serif Pro', serif;
     margin-top: 3rem;
 }
@@ -562,4 +687,440 @@ form h4 {
     background-color: hsl(218, 64%, 7%);
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
+}
+#menu{
+   visibility: hidden;
+}
+#sideMenu {
+    display: none;
+ 
+
+}
+@media only screen and (max-width: 1000px) {
+   header nav{
+        display: none;
+    }
+    #menu{
+      visibility: visible;
+      padding: 1rem;
+      cursor: pointer;
+    }
+    #sideMenu {
+        display: none;
+     
+        background-color: hsl(218, 64%, 7%, 0.7);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        flex-direction: row;
+    }
+    #menuCont {
+        border-right: 2px solid  hsl(46, 67%, 98%);
+        background-color: hsl(218, 63%, 12%);
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    #menuCont nav ul{
+       
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #menuCont nav{
+       
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+       
+    }
+    
+    #menuCont nav ul {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: -2rem;
+       
+    }
+    
+    #menuCont nav ul li  {
+        height: 100%;
+        width: 90%;
+        padding: 0 0.75rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        border-top: 1px solid grey;
+        color: hsl(46, 67%, 98%);
+      
+    }
+    #close {
+        cursor: pointer;
+    }
+    
+    #menuCont li a {
+      
+        text-decoration: none;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        color: hsl(46, 67%, 98%);
+        padding: 1rem;
+       
+    
+    }
+    .lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        min-width: 0rem;
+        margin-bottom: 5rem;
+    }
+    #closeCont {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .mission {
+        text-align: center;
+        background-color: hsl(218, 64%, 11%);
+        width: 90%;
+       padding: 1rem;
+        min-width: 0;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px outset hsl(46, 67%, 52%);
+        box-shadow: 5px 5px 10px black;
+        margin-top: 10rem;
+        border-radius: 10px;
+    
+    }
+    .mission h3 {
+        margin-top: -0.5rem;
+        font-size: 1.5rem;
+    }
+    .pointL {
+        width: 75%;
+        min-width: 0rem;
+        margin-left: -10%;
+        margin-top: -1rem;
+        padding: 1rem;
+        text-align: justify;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(218, 63%, 12%);
+        border: 2px solid hsl(46, 67%, 52%);
+        box-shadow: 5px 5px 10px black;
+    }
+    .civilList {
+        width: 80%;
+        min-width: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 35rem;
+        list-style: circle;
+        text-align: left;
+    }
+    .pointR {
+        width: 75%;
+        min-width: 0rem;
+        margin-left: 10%;
+        margin-top: -1rem;
+        padding: 1rem;
+        text-align: justify;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(218, 63%, 12%);
+        border: 2px solid hsl(46, 67%, 52%);
+        box-shadow: 5px 5px 10px black;
+    }
+    h1 {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 1.7rem;
+    }
+    .container3Civil {
+   
+        text-align: center;
+        background-color:hsl(218, 63%, 12%, 0.9);
+        width: 100%;
+        min-width: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: transparent;
+        box-shadow: 5px 5px 10px black;
+       font-size: 1.2rem;
+        border-radius: 20px;
+        margin-bottom: 6rem;
+        margin-top: 12rem;
+    }
+    .container2 {
+   
+        text-align: center;
+        background-color:hsl(218, 63%, 20%);
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px outset hsl(46, 67%, 52%);
+        box-shadow: 5px 5px 10px black;
+       font-size: 1rem;
+        border-radius: 10px;
+        margin-bottom: 4rem;
+    }
+    .container2 p {
+        padding: 1rem;
+        text-align: justify;
+        width: 90%;
+    }
+    .container3Civil p {
+        padding: 1rem;
+        text-align: justify;
+        width: 85%;
+       
+    }
+    .cont1 {
+        width: 90%;
+        min-width: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .container3Civil {
+   
+        text-align: center;
+        background-color:hsl(218, 63%, 12%, 0.9);
+        width: 90%;
+        min-width: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: transparent;
+        box-shadow: 5px 5px 10px black;
+       font-size: 0.9rem;
+        border-radius: 20px;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+    .areasCont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container {
+        background-image: url("../../resources/images/larabanner.jpg");
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 30rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footAreaCont {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+
+    }
+    footer .logo {
+        width: 8rem;
+        height: auto;
+        margin-top: 3rem;
+        margin-left: -1rem;
+    }
+    
+    .footerCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        margin: 2rem 0;
+    }
+    .footerContM {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        margin: 2rem 0;
+        border-left: 2px solid hsl(46, 67%, 52%);
+        border-right: 2px solid hsl(46, 67%, 52%);
+    }
+    
+    .footerCont a, span {
+        text-decoration: none;
+        margin: 0.5rem;
+        color: hsl(46, 67%, 98%);
+        text-align: center;
+    
+    }
+    .footerCont a:hover {
+        text-decoration: underline;
+        margin: 0.5rem;
+        color: hsl(46, 67%, 52%);
+        cursor: pointer;
+    
+    }
+    .footerContM a, span {
+        text-decoration: none;
+        margin: 0.5rem;
+        color: hsl(46, 67%, 98%);
+    
+    }
+    .area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px outset hsl(46, 67%, 52%);
+        box-shadow: 5px 5px 10px black;
+        width: 12rem;
+        border-radius: 10px;
+        background-color: hsl(218, 63%, 12%);
+        margin-bottom: 4rem;
+        text-decoration: none;
+        cursor: pointer;
+        color: hsl(46, 67%, 98%);
+        
+    }
+    .areaTitle {
+        font-size: 1.3rem;
+        font-family: 'Source Serif Pro', serif;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .area:hover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px outset hsl(46, 67%, 52%);
+        box-shadow: 5px 5px 10px black;
+        width: 12rem;
+        border-radius: 10px;
+      cursor: pointer;
+        margin-bottom: 4rem;
+      color: hsl(46, 67%, 52%);
+      
+      background-color: hsl(218, 63%, 20%);
+    }
+    .familiaList{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: space-around;
+        height: 20rem;
+        list-style: circle;
+    }
+    form {
+        width: 95%;
+        min-width: 0rem;
+        height: 35rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid hsl(46, 67%, 52%);
+        border-radius: 10px;
+        background-color: hsl(218, 63%, 20%);
+        margin-bottom: 5rem;
+    
+    }
+    
+    form h4 {
+        width: 16rem;
+        border: 1px solid hsl(46, 67%, 98%);
+        padding: 0.5rem;
+    }
+    .consulta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .consulta textarea {
+       width: 15rem;
+       height: 10rem;
+    }
+    
+    #submit {
+        color: hsl(46, 67%, 98%);
+       text-transform: uppercase;
+        border: 2px solid  hsl(46, 67%, 98%);
+        background-color: hsl(218, 63%, 12%);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 5px 5px 10px black;
+    }
+    #submit:hover {
+        text-transform: uppercase;
+        color: hsl(46, 67%, 52%);
+        padding: 1rem;
+        border: 2px solid hsl(46, 67%, 52%);
+        background-color: hsl(218, 64%, 7%);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px black;
+    }
+    .contactList {
+ 
+        min-width: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+     margin-left: -5rem;
+        list-style: none;
+        text-align: left;
+    }
 }

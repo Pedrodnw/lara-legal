@@ -9,14 +9,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bf966a450d.js" crossorigin="anonymous"></script>
     <title>LaraAbogados</title>
+    <meta
+    name="description"
+    content="Despacho de Abogados en Granada especializado en Derecho Civil: familia, sucesiones, propiedad horizontal."
+  />
+    
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <a href="./"> <img class="logo" src="./resources/images/laraLogo.png"></a>
-        <nav>
+        <a href="./index.html"> <img class="logo" src="./resources/images/laraLogo.png"></a>
+      
+        <i class="fas fa-bars fa-2x" id="menu"></i>
+        <nav class="nav">
+            
             <ul>
 
                 
@@ -26,15 +35,37 @@
                 <li><a href="./equipo.html">EQUIPO</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
             </ul>
+           
         </nav>
     </header>
+    <div id="sideMenu">
+        <div id="menuCont">
+            <a href="./index.html"> <img class="logo" src="./resources/images/laraLogo.png"></a>
+            <nav class="nav">
+            
+                <ul>
+    
+                    
+                    <li><a href="./familia.html">DERECHO FAMILIA</a></li>
+                    <li><a href="./sucesiones.html">DERECHO SUCESIONES</a></li>
+                    <li><a href="./propiedad.html">PROPIEDAD HORIZONTAL</a></li>
+                    <li><a href="./equipo.html">EQUIPO</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+               
+            </nav>
+        </div>
+        <div id="closeCont">
+            <i class="fas fa-times fa-2x" id="close"></i>
+        </div>
+    </div>
     <!-- Contents -->
     <main class="content">
         <!-- Banner -->
         <div class="banner">
             <div class="container">
                 <div class="mission">
-                    <h2>TU DESPACHO DE ABOGADOS EN GRANADA</h2>
+                    <h1>TU DESPACHO DE ABOGADOS EN GRANADA</h2>
                     <h3>Integridad - Lealtad - Respeto</h3>
                 </div>
             </div>
@@ -86,17 +117,17 @@
                      
                         <a href="./familia.html">   <div class="area">
                             <h4 class="areaTitle">Derecho<br />Familia</h4>
-                            <p class="areaDesc">Descripcion del area</p>
+                    
 
                         </div></a>
                         <a href="./sucesiones.html">   <div class="area">
                             <h4 class="areaTitle">Derecho<br />Sucesiones</h4>
-                            <p class="areaDesc">Descripcion del area</p>
+                         
 
                         </div></a>
                         <a href="./propiedad.html">   <div class="area">
                             <h4 class="areaTitle">Propiedad<br />Horizontal</h4>
-                            <p class="areaDesc">Descripcion del area</p>
+                            
 
                         </div></a>
                     </div>
@@ -108,7 +139,7 @@
             <div class="footAreaCont">
                 <div class="footerCont">
                    
-                    <a href="./">Pagina Principal</a>
+                    <a href="./index.html">Pagina Principal</a>
                     <a href="./familia.html">Derecho de Familia</a>
                     <a href="./sucesiones.html">Derecho de Sucesiones</a>
                     <a href="./propiedad.html">Propiedad Horizontal</a>
@@ -128,5 +159,5 @@
         </footer>
     </div>
 </body>
-
+<script type="text/javascript" src="script.js"></script>
 </html>
