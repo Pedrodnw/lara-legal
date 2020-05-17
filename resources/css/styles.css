@@ -327,6 +327,13 @@ li a:hover {
     text-align: justify;
     font-size: 0.9rem;
 }
+.picFoot a {
+   
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(46, 67%, 52%);
+}
 .container2 {
    
     text-align: center;
@@ -704,7 +711,7 @@ form h4 {
     .containerCivil {
         background-image: url("../../resources/images/civil.jpg");
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: unset;
         background-size: cover;
    
         height: 100%;
@@ -715,7 +722,7 @@ form h4 {
     .containerFamilia {
         background-image: url("../../resources/images/familia.jpg");
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: unset;
         background-size: cover;
    
         height: 100%;
@@ -727,7 +734,7 @@ form h4 {
     .containerSucesiones {
         background-image: url("../../resources/images/sucesiones.jpg");
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: unset;
         background-size: cover;
    
         height: 100%;
@@ -1020,7 +1027,7 @@ form h4 {
     .container {
         background-image: url("../../resources/images/larabanner.jpg");
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: unset;
         background-size: cover;
         min-height: 30rem;
         height: 100%;
