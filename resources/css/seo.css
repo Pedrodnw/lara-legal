@@ -707,15 +707,6 @@ textarea:focus-visible {
   color: var(--ink-soft);
 }
 
-.legal-disclaimer {
-  margin-top: 46px;
-  padding: 22px 24px;
-  border-radius: 16px;
-  background: #fff0ed;
-  color: var(--ink-soft);
-  font-size: 0.92rem;
-}
-
 .footer-legal {
   display: flex;
   flex-wrap: wrap;
